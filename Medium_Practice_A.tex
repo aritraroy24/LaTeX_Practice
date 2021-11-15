@@ -1,0 +1,45 @@
+\documentclass{article}
+\title{Medium Practice}
+\date{15-11-2021}
+\author{Aritra Roy}
+\usepackage[margin=1in]{geometry}
+\usepackage{esint}
+\usepackage{amsmath}
+\begin{document}
+\maketitle
+\begin{flalign}
+1_A &= \left\{
+    \begin{array}{cc}
+        1 & \mbox{if } x \in A \\
+        0 & \mbox{if } x \notin A
+    \end{array}
+\right.\\
+n\underbrace{\uparrow\cdots\uparrow}n &=n\rightarrow n\rightarrow n
+\end{flalign}
+In the following, note the spacing between the = and the ${^1}1, {^2}2, and \,\, {^{{^3}3}} $
+\begin{align}
+1\uparrow1&={^1}1=1\\
+2\uparrow\uparrow2&={^2}2=4
+\end{align}
+\[3\uparrow\uparrow\uparrow3={^{{^3}3}}3=3\uparrow\uparrow3\uparrow\uparrow3=\underbrace{3^{3^{3^{3^{3^{3^{.^{.^{.^3}}}}}}}}}_{3^{3^3} threes}\]
+\begin{flalign}
+\frac{d}{dx}f(x)&=\lim_{\Delta x\to 0}\frac{f(x+\Delta x)-f(x)}{\Delta x}\\
+H_2O(l)+H_2O(l)&\rightleftharpoons H_3O^+(aq)+OH^-(aq)\\
+\Gamma(n+1)\,&{\overset{def}{=}}\int_0^{\infty}e^{-t}t^ndt
+\end{flalign}
+\[gcd(n,\hspace{1mm}m\hspace{1mm}mod\hspace{1mm}n);\hspace{1em}x\equiv y\hspace{1em} (mod\hspace{1mm}b);\hspace{1em}x\equiv y\hspace{1em}mod\hspace{1mm}c;\hspace{1em}x\equiv y\]
+In the following, note the bold symbols.
+\begin{flalign}
+\nabla\cdot\textbf{E} &=\frac{\rho}{\epsilon_0}\\
+\nabla\cdot\textbf{B} &=0\\
+\nabla\times\textbf{E} &=-\frac{\partial\textbf{B}}{\partial t}\\
+\nabla\times\textbf{B} &=\mu_0\textbf{J}+\mu_0\epsilon_0\frac{\partial\textbf{E}}{\partial t}
+\end{flalign}
+For the following exercise, we need to use \textbf{\{esint\}} package to get the symbol of surface or volume integration.
+\begin{flalign}
+\oiint_{\partial V}\textbf{E}\cdot d\textbf{A}&=\frac{Q(V)}{\epsilon_0}\\
+\oiint_{\partial V}\textbf{B}\cdot d\textbf{A}&=0\\
+\oint_{\partial S}\textbf{E}\cdot d\textbf{l}&=-\frac{\partial\Phi_{B,S}}{\partial t}\\
+\oint_{\partial S}\textbf{B}\cdot d\textbf{l}&=\mu_0I_S+\mu_0\epsilon_0\frac{\partial\Phi_{E,S}}{\partial t}
+\end{flalign}
+\end{document}
