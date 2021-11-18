@@ -2,8 +2,10 @@
 \title{Medium Practice}
 \date{15-11-2021}
 \author{Aritra Roy}
-\usepackage[margin=1in]{geometry}
-\usepackage{amsmath, amssymb, graphicx}
+\newcommand{\mathset}[1][x]{\{{#1}|0\leq{#1}\leq1\}} % defining new command for easy writing
+\usepackage[margin=0.5in]{geometry}
+\usepackage{amsmath, amssymb, graphicx, subcaption, float}
+\graphicspath{ {./pictures/} }
 \begin{document}
 \maketitle
 One may find the environments \textbf{bmatrix} and \textbf{pmatrix} useful for the following exercises.
@@ -35,6 +37,22 @@ Note the locations of the bounds on the summation in the following exercise.
 In the following, the size of the /, and the spacing on the sides of | are noticable.
 \begin{flalign}
 \mathbb{Q}\cong\left\{\frac{a}{b}\hspace{1mm}\scalebox{2}{$|$}\hspace{1mm}a,b\in\mathbb{Z}\text{ and b}\neq0\right\} &\scalebox{2}{/}\sim\\
-\frac{a}{b}\sim\frac{c}{d}\Longleftrightarrow ad-bc&=0
+\frac{a}{b}\sim\frac{c}{d}\Longleftrightarrow ad-bc&=0\\
+\mathset{}\\ % gives default value i.e. x
+\mathset[z]  % overwriting the default value
 \end{flalign}
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{wallpaper1.jpg}
+    \caption{Wallpaper 1}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{wallpaper2.jpg}
+    \caption{Wallpaper 2}
+  \end{subfigure}
+  \caption{Image insertion}
+  \label{fig:image}
+\end{figure}
 \end{document}
